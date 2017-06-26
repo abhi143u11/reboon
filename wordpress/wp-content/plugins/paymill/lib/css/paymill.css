@@ -1,0 +1,222 @@
+/* form validation */
+#paymill_payment_form  .LV_validation_message{
+	font-weight:bold;
+	margin:0 0 0 5px;
+}
+#paymill_payment_form  .LV_valid {
+	color:#00CC00;
+	float:left;
+	display:block;
+}
+#paymill_payment_form  .LV_invalid {
+	color:#CC0000;
+	float:none;
+	clear:both;
+	display:block;
+}
+#paymill_payment_form  .LV_valid_field,
+#paymill_payment_form  input.LV_valid_field:hover, 
+#paymill_payment_form  input.LV_valid_field:active,
+#paymill_payment_form  textarea.LV_valid_field:hover, 
+#paymill_payment_form  textarea.LV_valid_field:active {
+	border: 1px solid #00CC00;
+} 
+#paymill_payment_form  .LV_invalid_field, 
+#paymill_payment_form  input.LV_invalid_field:hover, 
+#paymill_payment_form  nput.LV_invalid_field:active,
+#paymill_payment_form  textarea.LV_invalid_field:hover, 
+#paymill_payment_form  textarea.LV_invalid_field:active {
+	border: 1px solid #CC0000;
+}
+
+/* paymment form */
+#paymill_payment_form input, .paymill_pay_button input{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	padding:3px;
+	margin:0px 0px 5px 0px;
+	height:30px;
+	font-size:15px;
+	width:90%;
+}
+.paymill_card_data{
+	clear:both;
+	overflow:hidden;
+	max-width:80%;
+}
+.payment_method_paymill{
+	overflow:hidden;
+}
+#paymill_payment_form #paymill_card_expiry_month{
+	width:40px;
+	text-align:center;
+	float:left;
+	clear:none;
+}
+#paymill_payment_form #paymill_card_expiry_year{
+	width:50px;
+	text-align:center;
+	float:left;
+	clear:none;
+	margin-left:5px;
+}
+#paymill_payment_form #paymill_card_cvc{
+	width:40px;
+	text-align:center;
+	float:left;
+	clear:none;
+	margin-left:5px;
+}
+#paymill_payment_form #paymill_card_cvc:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+#paymill_payment_form .paymill_card_cvc .cvc_desc{
+	line-height:30px;
+	display:inline-block;
+	height:30px;
+	margin-left:5px;
+}
+#paymill_payment_form #paymill_card_number{
+	background-image:url('../img/payment_logos.png');
+	background-repeat:no-repeat;
+	background-position:0px 30px;
+}
+#paymill_framebox img{
+	box-shadow:none !important;
+}
+paymill_#form_credit, paymill_#form_elv{
+	clear:both;
+}
+.paymill_form_switch{
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #F5F5F5;
+	background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+	background-repeat: repeat-x;
+	border-color: #BBBBBB #BBBBBB #A2A2A2;
+	border-image: none;
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+	color: #333333;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	padding: 4px 12px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+}
+.paymill_form_switch:hover{
+	background-color: #E6E6E6;
+	color: #333333;
+}
+.paymill_form_switch_active, .paymill_form_switch_active:hover{
+	background-color: #EC4F00;
+	background-image: linear-gradient(to bottom, #F05000, #E64D00);
+	background-repeat: repeat-x;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.paymill_payment_logos{
+	margin-bottom:10px;
+}
+.paymill_payment_logos img, .payment_method_paymill label img{
+	display:inline;
+}
+
+/* error box */
+.paymill_payment_errors{
+	background-color:#FF3300;
+	color:#FFF;
+	margin:10px 0px 10px 0px;
+	padding:0px 5px 0px 5px;
+	border-radius: 4px;
+	font-weight:bold;
+}
+
+/* pay button */
+.paymill_hidden{
+	display:none;
+}
+.paymill_pay_button #place_order{
+	width:100%;
+	font-weight:bold;
+	font-size:120%;
+}
+.paymill_products{
+	margin-bottom:10px;
+}
+.paymill_pay_button .paymill_product{
+	margin-bottom:10px;
+}
+.paymill_pay_button .paymill_product:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.paymill_pay_button .paymill_title{
+	font-weight:bold;
+	font-size:120%;
+	margin-bottom:5px;
+}
+.paymill_pay_button .paymill_desc{
+	font-size:80%;
+	margin-bottom:5px;
+}
+.paymill_pay_button .paymill_quantity{
+	margin:0px 5px 5px 0px;
+	float:left;
+	font-size:120%;
+}
+.paymill_pay_button .paymill_price{
+	font-weight:bold;
+	font-size:120%;
+	margin-bottom:5px;
+	float:left;
+}
+.paymill_pay_button .paymill_vat{
+	margin-bottom:5px;
+	font-size:70%;
+}
+.paymill_pay_button .paymill_delivery{
+	font-size:70%;
+}
+.paymill_pay_button .paymill_total_price{
+	font-size:120%;
+	font-weight:bold;
+}
+.paymill_pay_button .paymill_shipping{
+	margin-bottom:10px;
+}
+.paymill_pay_button .paymill_address .paymill_address_title{
+	font-weight:bold;
+	font-size:120%;
+	border-top:1px solid #EC4F00;
+	margin-top:5px;
+	padding-top:5px;
+}
+.paymill_pay_button .paymill_payment_title{
+	font-weight:bold;
+	font-size:120%;
+	border-top:1px solid #EC4F00;
+	margin-top:10px;
+	padding-top:5px;
+}
+.paymill_pay_button #payment_method_paymill{
+	display:none;
+}
+
+/* cart66 -_- */
+#Cart66_paymill_for_wordpress_form #contactPaymentInfo li:nth-child(n+2):nth-child(-n+5){
+	display:none;
+}

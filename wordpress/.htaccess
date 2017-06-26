@@ -1,0 +1,28 @@
+# BEGIN iThemes Security - Diese Zeile nicht verändern oder entfernen
+# iThemes Security Config Details: 2
+	# Die Funktion Backend verstecken aktivieren - Sicherheit > Einstellungen > Anmeldebereich verstecken > Backend verstecken
+	RewriteRule ^(/)?logintoreboonde/?$ /wp-login.php [QSA,L]
+	RewriteRule ^(/)?wp-register-php/?$ /wplogin?action=register [QSA,L]
+# END iThemes Security - Diese Zeile nicht verändern oder entfernen
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# сжатие text, html, javascript, css, xml:
+<ifModule mod_deflate.c>
+Addtype font/opentype .otf
+Addtype font/eot .eot
+Addtype font/truetype .ttf
+Addtype font/truetype .woff
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript font/opentype font/truetype font/eot font/woff
+
+</ifModule>
